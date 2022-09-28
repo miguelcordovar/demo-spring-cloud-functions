@@ -1,7 +1,6 @@
 package com.example.demo;
 
 import com.example.demo.model.Greeting;
-import com.example.demo.model.Quote;
 import com.example.demo.model.Todo;
 import com.example.demo.model.User;
 import lombok.extern.slf4j.Slf4j;

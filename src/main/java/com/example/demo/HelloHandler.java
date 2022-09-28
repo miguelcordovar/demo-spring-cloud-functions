@@ -14,10 +14,8 @@ public class HelloHandler extends FunctionInvoker<User, Greeting> {
 
     @FunctionName("hello")
     public HttpResponseMessage execute(
-        @HttpTrigger(name = "request",
-            methods = {HttpMethod.GET, HttpMethod.POST},
-            authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage<Optional<User>> request,
-        ExecutionContext context) {
+        @HttpTrigger(name = "request", methods = {HttpMethod.POST}, authLevel = AuthorizationLevel.ANONYMOUS)
+        HttpRequestMessage<Optional<User>> request, ExecutionContext context) {
 
         User user = request.getBody()
             .filter((u -> u.getName() != null))

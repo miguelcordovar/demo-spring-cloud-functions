@@ -25,7 +25,7 @@ public class EncryptHandler extends FunctionInvoker<EncryptRequest, EncryptRespo
         EncryptRequest encryptRequest = request.getBody()
             .orElse(new EncryptRequest());
 
-        encryptRequest.setApplication(request.getHeaders().getOrDefault("X-APP-CODE",null));
+        //encryptRequest.setApplication(request.getHeaders().getOrDefault("X-APP-CODE",null));
 
         context.getLogger().info("Encrypt Message: " + encryptRequest.getPlaintext());
 

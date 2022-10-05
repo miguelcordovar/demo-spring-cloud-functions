@@ -25,7 +25,7 @@ public class DecryptHandler extends FunctionInvoker<DecryptRequest, DecryptRespo
             .filter((r -> r.getCiphertext() != null))
             .orElse(new DecryptRequest());
 
-        decryptRequest.setApplication(request.getHeaders().getOrDefault("X-APP-CODE",null));
+        //decryptRequest.setApplication(request.getHeaders().getOrDefault("X-APP-CODE",null));
 
         context.getLogger().info("Decrypt Message: " + decryptRequest.getCiphertext());
 

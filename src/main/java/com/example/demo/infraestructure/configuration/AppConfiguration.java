@@ -19,6 +19,10 @@ import java.net.HttpURLConnection;
 public class AppConfiguration {
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder) {
+
+
+        
+
         return builder
             .requestFactory(() -> new SimpleClientHttpRequestFactory() {
             @Override

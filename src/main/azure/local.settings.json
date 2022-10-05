@@ -4,6 +4,11 @@
         "AzureWebJobsStorage": "",
         "FUNCTIONS_WORKER_RUNTIME": "java",
         "MAIN_CLASS":"com.example.demo.DemoApplication",
-        "AzureWebJobsDashboard": ""
+        "AzureWebJobsDashboard": "",
+        "VTS_ENCRYPT_URI": "http://demo.com/api/v1/encrypt",
+        "VTS_DECRYPT_URI": "http://demo.com/api/v1/decrypt",
+        "VTS_KEY_VAULT_URI": "https://akvlrojastest.vault.azure.net",
+        "VTS_PREFIX_USERNAME": "AP",
+        "VTS_ENVIRONMENT": "DES"
     }
 }

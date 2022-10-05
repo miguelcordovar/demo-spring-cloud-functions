@@ -31,7 +31,7 @@ public class ExceptionHandler {
 
             return request
                 .createResponseBuilder(HttpStatus.BAD_REQUEST)
-                .body("RuntimeException --> " +  sw.toString())
+                .body("RuntimeException v2 --> " +  sw.toString())
                 .header("Content-Type", MediaType.APPLICATION_JSON_VALUE)
                 .build();
        } else {

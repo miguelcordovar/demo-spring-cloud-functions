@@ -23,6 +23,7 @@ public class Encrypt implements Function<EncryptRequest, EncryptResponse> {
     public EncryptResponse apply(EncryptRequest encryptRequest) {
         Message message = new Message();
         message.setApplication(encryptRequest.getApplication());
+        message.setPlaintext(encryptRequest.getPlaintext());
         message.setAlg(encryptRequest.getAlg());
         message.setKid(encryptRequest.getKid());
 
